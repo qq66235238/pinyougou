@@ -1,0 +1,17 @@
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 快捷导航模块 */
+/* 因为需求这里给通栏，给与高度就好 */
+.shortcut{
+    height: 31px;
+    background: #f1f1f1;
+}
