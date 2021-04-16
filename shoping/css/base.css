@@ -69,3 +69,9 @@ body {
 .clearfix {
     *zoom: 1
 }
+.logo {
+    position: absolute;
+    width: 171px;
+    height: 61px;
+    background-color: skyblue;
+}
