@@ -1,69 +1,161 @@
 /* 声明字体图标,这里一定要注意路劲的变化 */
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?tomleg');
-    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
-      url('../fonts/icomoon.woff?tomleg') format('woff'),
-      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
+}
+
 
 /* 版心 */
-.w{
+
+.w {
     width: 1200px;
     margin: 0 auto;
 }
-.fl{
+
+.fl {
     float: left;
 }
-.fr{
+
+.fr {
     float: right;
 }
-.style_red{
+
+.style_red {
     color: #c81623;
 }
+
+
 /* 快捷导航模块 */
+
+
 /* 因为需求这里给通栏，给与高度就好 */
-.shortcut{
+
+.shortcut {
     height: 31px;
     line-height: 31px;
     background: #f1f1f1;
 }
+
 .shortcut ul li {
     float: left;
 }
+
+
 /* 选择所有偶数的小li*/
-.shortcut .fr ul li:nth-child(even){
+
+.shortcut .fr ul li:nth-child(even) {
     width: 1px;
     height: 12px;
     background-color: #666;
     margin: 9px 15px 0;
 }
-.arrow-icon::after{
+
+.arrow-icon::after {
     content: "\e91e";
     font-family: 'icomoon';
     margin-left: 6px;
 }
+
+
 /* header 头部制作 */
-.header{
+
+.header {
     position: relative;
     height: 105px;
     background: pink;
 }
+
+
+/* logo模块 */
+
 .logo {
     position: absolute;
     top: 25px;
-    width: 171px;
+    width: 177px;
     height: 61px;
     background-color: skyblue;
 }
-.logo a{
+
+.logo a {
     display: block;
-    width: 171px;
+    width: 177px;
     height: 61px;
     background: url(../images/logo.png);
-    text-indent: -9999px;
+    /* text-indent: -9999px; */
+    font-size: 0;
+}
+
+
+/* <!-- search搜索模块 --> */
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input[type='search'] {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* <!-- hotwords模块制作 --> */
+
+.hotwords {
+    position: absolute;
+    left: 346px;
+    top: 66px;
+}
+
+.hotwords a {
+    /* 行内元素给左右margin是没问题的 */
+    margin: 0 10px;
+}
+
+
+/* <!-- shopcar购物车模块 --> */
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+}
+
+.shopcar::before {
+    content: "\e93a";
+    font-family: "icomoon";
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    content: "\e920";
+    font-family: "icomoon";
+    margin-left: 10px;
 }
